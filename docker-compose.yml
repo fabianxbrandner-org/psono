@@ -1,7 +1,7 @@
   version: '3'
   services:
     psono_db:
-      image: postgres:10.4
+      image: postgres:latest
       container_name: psono_db
       environment:
         - POSTGRES_USER=psono
@@ -42,7 +42,7 @@
         - backend
         - outside
       ports:
-        - "443:443"
+        - "4443:443"
       restart: always
       depends_on:
         - psono_db

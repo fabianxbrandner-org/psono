@@ -16,20 +16,20 @@ DEBUG: False
 ALLOWED_HOSTS: ['*']
 
 # Should be your domain without "www.". Will be the last part of the username
-ALLOWED_DOMAINS: ['bientd88.com']
+ALLOWED_DOMAINS: ['fabianxbrandner.com']
 
 # If you want to disable registration, you can comment in the following line
 # ALLOW_REGISTRATION: False
 
 # If you want to restrict registration to some email addresses you can specify here a list of domains to filter
-# REGISTRATION_EMAIL_FILTER: ['company1.com', 'company2.com']
+REGISTRATION_EMAIL_FILTER: ['fabianxbrandner.com']
 
 # Should be the URL of the host under which the host is reachable
 # If you open the url you should have a text similar to {"detail":"Authentication credentials were not provided."}
-HOST_URL: 'https://bientd88.com/server'
+HOST_URL: 'https://psono.fabianxbrandner.com/server'
 
 # The email used to send emails, e.g. for activation
-EMAIL_FROM: 'the-mail-for-for-example-useraccount-activations@test.com'
+EMAIL_FROM: 'no-reply@fabianxbrandner.com'
 EMAIL_HOST: 'localhost'
 EMAIL_HOST_USER: ''
 EMAIL_HOST_PASSWORD : ''
@@ -71,19 +71,19 @@ EMAIL_TIMEOUT:
 # THROTTLING: False
 
 # Enables the management API, required for the psono-admin-client / admin portal
-# MANAGEMENT_ENABLED: False
+MANAGEMENT_ENABLED: False
 
 # Allows that users can search for partial usernames
-# ALLOW_USER_SEARCH_BY_USERNAME_PARTIAL: True
+ALLOW_USER_SEARCH_BY_USERNAME_PARTIAL: True
 
 # Allows that users can search for email addresses too
-# ALLOW_USER_SEARCH_BY_EMAIL: True
+ALLOW_USER_SEARCH_BY_EMAIL: True
 
 # Only necessary if the psono-client runs on a sub path (no trailing slash) e.g. "https://wwww.psono.pw"
-# WEB_CLIENT_URL: ''
+WEB_CLIENT_URL: 'https://psono.fabianxbrandner.com'
 
 # Prevents the use of the last X passwords. 0 disables it.
-# DISABLE_LAST_PASSWORDS: 0
+DISABLE_LAST_PASSWORDS: 3
 
 # Your Postgres Database credentials
 DATABASES:
